@@ -73,8 +73,11 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
+        {to: '/docs/projects', label: 'Projects', position: 'left'},
+        {to: '/docs/crowdfunding', label: 'Crowdfunding', position: 'left'},
+        {to: '/docs/contact', label: 'Contact', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/beeping-io/beeping-docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -88,33 +91,55 @@ const config: Config = {
           items: [
             {
               label: 'Introduction',
-              to: `/docs/${'introduction'}`,
+              to: ['/docs', 'introduction'].join('/'),
+            },
+            {
+              label: 'Protocol',
+              to: '/docs/protocol',
+            },
+            {
+              label: 'BeepBox',
+              to: '/docs/beepbox',
+            },
+            {
+              label: 'Android SDK',
+              to: '/docs/sdk-android',
+            },
+            {
+              label: 'iOS SDK',
+              to: '/docs/sdk-ios',
+            },
+            {
+              label: 'Beeping Core',
+              to: '/docs/core',
+            },
+            {
+              label: 'Examples',
+              to: '/docs/examples',
             },
           ],
         },
         {
           title: 'Community',
           items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
+            {label: 'Community', to: '/docs/community'},
+            {label: 'Projects', to: '/docs/projects'},
           ],
         },
         {
           title: 'More',
           items: [
             {
+              label: 'Crowdfunding',
+              to: '/docs/crowdfunding',
+            },
+            {
+              label: 'Contact',
+              to: '/docs/contact',
+            },
+            {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/beeping-io/beeping-docs',
             },
           ],
         },
