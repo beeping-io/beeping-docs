@@ -17,6 +17,8 @@ This project adheres to [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 - Test suite now enforces bilingual documentation, including language link verification, before the production build.
 - `npm run test` now enforces docs and i18n checks before the production build.
 - Documented navigation and workflow expectations for the Beeping docs site.
+- Language switching is now handled exclusively by the global UI; in-content language links were removed.
+- Removed remaining in-content language switch links; navbar dropdown is the only language selector.
 
 ### Fixed
 - Removed temporary broken `/es/docs` links from English docs until the Spanish mirror is fully available.
