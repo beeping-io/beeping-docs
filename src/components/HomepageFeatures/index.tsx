@@ -1,6 +1,6 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
-import {Translate} from '@docusaurus/Translate';
+import Translate from '@docusaurus/Translate';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
