@@ -39,6 +39,8 @@ const config: Config = {
     },
   },
 
+  clientModules: [require.resolve('./src/clientModules/localeRedirect.ts')],
+
   presets: [
     [
       'classic',

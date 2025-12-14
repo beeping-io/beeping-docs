@@ -12,7 +12,7 @@ Official documentation site for the Beeping ecosystem, built with Docusaurus and
 - Run `npm install` to install dependencies.
 
 ## Run locally
-- Start the dev server with `npm run start`.
+- Start the dev server with `npm run serve`.
 - Open http://localhost:3000/ to browse the docs.
 - Edits to docs and source files hot-reload automatically.
 

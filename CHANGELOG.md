@@ -7,7 +7,11 @@ This project adheres to [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 - Added mandatory validation scripts for docs structure, content, and i18n coverage.
 - Added mandatory language switch links between English and Spanish documentation.
 - Added multilingual support (English default with Spanish) and a language dropdown in the navbar.
+- Added browser-locale-based redirect on first visit to send Spanish users to `/es/`.
 - Updated OSS docs: refreshed README, CONTRIBUTING guidance, and MIT license notes.
+- Added Spanish documentation mirror for all docs pages.
+- Added Spanish home page translation.
+- Added Spanish translations for the homepage strings.
 
 ### Changed
 - Test suite now enforces bilingual documentation, including language link verification, before the production build.
@@ -15,6 +19,7 @@ This project adheres to [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 - Documented navigation and workflow expectations for the Beeping docs site.
 
 ### Fixed
+- Removed temporary broken `/es/docs` links from English docs until the Spanish mirror is fully available.
 - Clarified changelog policy for ongoing documentation updates.
 
 ## [0.1.0] - Initial setup

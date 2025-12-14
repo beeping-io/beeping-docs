@@ -13,10 +13,16 @@
 - Update `CHANGELOG.md` under `[Unreleased]` for every user-visible change.
 - i18n rule: every doc under `docs/**` must have a Spanish counterpart once i18n is enabled.
 
-## Language requirements
-- English is the source language for all documentation under `docs/**`.
-- Spanish is mandatory alongside English for every page.
-- Every doc must include a language switch link to `/es/docs/...`, and every Spanish doc must link back to `/docs/...`.
+## Languages
+- English is the source of truth for all documentation under `docs/**`.
+- Spanish docs must exist under `i18n/es/docusaurus-plugin-content-docs/current/**` with matching paths.
+- PRs that add or modify docs must update both English and Spanish versions.
+- Every English doc must include a link to `/es/docs/...`, and every Spanish doc must link back to `/docs/...`.
+
+## Translations
+- UI pages under `src/pages` must wrap user-facing strings with `<Translate>` (with stable ids).
+- When adding or changing UI text, update the Spanish translation JSON under `i18n/es/**` for the matching ids.
+- Always record user-visible text changes in `CHANGELOG.md` under `[Unreleased]`.
 
 ## Where docs live
 - Documentation content is under `docs/*`, organized by sections such as `introduction`, `protocol`, `beepbox`, `sdk-android`, `sdk-ios`, `core`, `examples`, `community`, `projects`, `crowdfunding`, and `contact`.
