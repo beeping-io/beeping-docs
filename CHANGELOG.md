@@ -19,6 +19,13 @@ This project adheres to [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 - Documented navigation and workflow expectations for the Beeping docs site.
 - Language switching is now handled exclusively by the global UI; in-content language links were removed.
 - Removed remaining in-content language switch links; navbar dropdown is the only language selector.
+- Localized site title per locale (EN/ES) and standardized page titles with delimiter ` | `.
+- Set site title to \"Beeping Documentation\", navbar brand to \"Beeping\", and enforce \"Beeping Documentation | Page\" ordering.
+- Standardized base titles (EN/ES) and ensured the homepage uses a standalone title without suffix.
+- Navbar brand fixed to \"Beeping\" across locales.
+- Homepage titles are locale-specific and standalone; non-home titles are standardized per locale.
+- Navbar menu labels are localized for Spanish (brand remains \"Beeping\").
+- Spanish homepage title is standalone and localized.
 
 ### Fixed
 - Removed temporary broken `/es/docs` links from English docs until the Spanish mirror is fully available.

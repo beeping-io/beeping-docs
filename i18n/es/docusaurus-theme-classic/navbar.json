@@ -1,26 +1,26 @@
 {
   "title": {
-    "message": "My Site",
+    "message": "Beeping",
     "description": "The title in the navbar"
   },
   "logo.alt": {
-    "message": "My Site Logo",
+    "message": "Beeping Logo",
     "description": "The alt text of navbar logo"
   },
   "item.label.Docs": {
-    "message": "Docs",
+    "message": "Documentación",
     "description": "Navbar item with label Docs"
   },
   "item.label.Projects": {
-    "message": "Projects",
+    "message": "Proyectos",
     "description": "Navbar item with label Projects"
   },
   "item.label.Crowdfunding": {
-    "message": "Crowdfunding",
+    "message": "Financiación",
     "description": "Navbar item with label Crowdfunding"
   },
   "item.label.Contact": {
-    "message": "Contact",
+    "message": "Contacto",
     "description": "Navbar item with label Contact"
   },
   "item.label.GitHub": {

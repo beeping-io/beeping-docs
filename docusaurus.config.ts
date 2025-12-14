@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Beeping Documentation',
+  tagline: 'Official documentation for the Beeping ecosystem',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -39,7 +39,10 @@ const config: Config = {
     },
   },
 
-  clientModules: [require.resolve('./src/clientModules/localeRedirect.ts')],
+  clientModules: [
+    require.resolve('./src/clientModules/localeRedirect.ts'),
+    require.resolve('./src/clientModules/titlePolicy.ts'),
+  ],
 
   presets: [
     [
@@ -61,15 +64,16 @@ const config: Config = {
   ],
 
   themeConfig: {
+    titleDelimiter: ' | ',
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     colorMode: {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      title: 'Beeping',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Beeping Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -79,9 +83,21 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        {to: '/docs/projects', label: 'Projects', position: 'left'},
-        {to: '/docs/crowdfunding', label: 'Crowdfunding', position: 'left'},
-        {to: '/docs/contact', label: 'Contact', position: 'left'},
+        {
+          to: '/docs/projects',
+          label: 'Projects',
+          position: 'left',
+        },
+        {
+          to: '/docs/crowdfunding',
+          label: 'Crowdfunding',
+          position: 'left',
+        },
+        {
+          to: '/docs/contact',
+          label: 'Contact',
+          position: 'left',
+        },
         {type: 'localeDropdown', position: 'right'},
         {
           href: 'https://github.com/beeping-io/beeping-docs',

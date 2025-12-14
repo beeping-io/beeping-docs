@@ -3,6 +3,8 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Translate, {translate} from '@docusaurus/Translate';
+import Head from '@docusaurus/Head';
+import {useLocation} from '@docusaurus/router';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
@@ -35,13 +37,18 @@ function HomepageHeader() {
 }
 
 export default function Home(): ReactNode {
+  const {pathname} = useLocation();
+  const homeTitle = pathname.startsWith('/es')
+    ? 'Documentación del Beeping'
+    : 'Beeping Documentation';
   return (
-    <Layout
-      title={translate({id: 'homepage.meta.title', message: 'Beeping Docs'})}
-      description={translate({
-        id: 'homepage.meta.description',
-        message: 'Documentation hub for the Beeping ecosystem.',
-      })}>
+    <Layout description={translate({
+      id: 'homepage.meta.description',
+      message: 'Documentation hub for the Beeping ecosystem.',
+    })}>
+      <Head>
+        <title>{homeTitle}</title>
+      </Head>
       <HomepageHeader />
       <main>
         <HomepageFeatures />
