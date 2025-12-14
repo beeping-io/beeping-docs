@@ -6,6 +6,7 @@ This project adheres to [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 ### Added
 - Added mandatory validation scripts for docs structure, content, and i18n coverage.
 - Added mandatory language switch links between English and Spanish documentation.
+- Added multilingual support (English default with Spanish) and a language dropdown in the navbar.
 - Updated OSS docs: refreshed README, CONTRIBUTING guidance, and MIT license notes.
 
 ### Changed

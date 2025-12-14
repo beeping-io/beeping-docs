@@ -32,7 +32,11 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'es'],
+    localeConfigs: {
+      en: {label: 'English', htmlLang: 'en'},
+      es: {label: 'Español', htmlLang: 'es-ES'},
+    },
   },
 
   presets: [
@@ -76,6 +80,7 @@ const config: Config = {
         {to: '/docs/projects', label: 'Projects', position: 'left'},
         {to: '/docs/crowdfunding', label: 'Crowdfunding', position: 'left'},
         {to: '/docs/contact', label: 'Contact', position: 'left'},
+        {type: 'localeDropdown', position: 'right'},
         {
           href: 'https://github.com/beeping-io/beeping-docs',
           label: 'GitHub',
